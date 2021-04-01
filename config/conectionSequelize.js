@@ -13,19 +13,4 @@ const sequelize = new Sequelize('celke', 'douglas', '123456', {
   })
 
 
-  const Pagamento = sequelize.define('tableTeste', {
-    // attributes
-    nome: {
-      type: Sequelize.STRING
-    },
-    valor: {
-      type: Sequelize.DOUBLE
-      // allowNull defaults to true
-    }
-  });
 
-  //User.sync({force:true})
-  Pagamento.create({
-      nome:"Energia",
-      valor:200
-  })

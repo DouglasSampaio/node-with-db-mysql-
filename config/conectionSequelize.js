@@ -12,5 +12,9 @@ const sequelize = new Sequelize('celke', 'douglas', '123456', {
     console.log("falha na conexao com bd "+ err)
   })
 
+  module.exports ={
+    Sequelize: sequelize,
+    sequelize: sequelize
+  }
 
 
